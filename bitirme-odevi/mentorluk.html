@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mentörlük - TechKadın Akademi</title>
+    <link rel="stylesheet" href="mentorluk.css">
+</head>
+<body>
+
+<!-- 3D Navigation Bar -->
+<nav class="navbar">
+    <a href="index.html">Ana Sayfa</a> <!-- Ana sayfa bağlantısı eklendi -->
+    <a href="#mentor-nedir">Mentörlük Nedir?</a>
+    <a href="#mentor-yorum">Mentörlerimiz Neler Diyor?</a>
+    <a href="#menti-yorum">Mentilerimiz Neler Düşünüyor?</a>
+    <a href="#basvuru-form">Başvuru Formları</a>
+</nav>
+
+<header>
+    <h1>Mentörlük Programı</h1>
+</header>
+
+<main>
+    <!-- Mentörlük Nedir? -->
+    <section id="mentor-nedir" class="section">
+        <h2>Mentörlük ve Menti Nedir?</h2>
+        <p>Mentörlük, tecrübeli bir bireyin (mentör) tecrübesiz bir bireye (menti) rehberlik ettiği bir süreçtir. Bu süreç, mentinin profesyonel ya da kişisel gelişimine katkı sağlamak amacıyla karşılıklı öğrenme, gelişim ve destek üzerine kuruludur. 
+        Mentörlük programı sayesinde mentiler, kendi alanlarında tecrübeli bir rehberin desteğiyle kariyer hedeflerine ulaşmak için önemli adımlar atabilir.</p>
+
+        <p>Bir menti olarak, mentörünüzle birlikte kariyerinizde daha hızlı ilerleyebilir, zorluklarla başa çıkma konusunda destek alabilirsiniz. Bir mentör olarak ise, tecrübelerinizi paylaşarak başka bir kadının kariyer yolculuğuna yön verebilirsiniz.</p>
+    </section>
+
+    <!-- Mentör Yorumları -->
+    <section id="mentor-yorum" class="section">
+        <h2>Mentörlerimiz Neler Diyor?</h2>
+
+        <div class="testimonial">
+            <h3>Selin Yılmaz</h3>
+            <p>“TechKadın Akademi'nin mentörlük programı sayesinde hayatıma harika bir menti dahil oldu. Kendi tecrübelerimi paylaşırken onun gelişimini görmek beni çok mutlu ediyor. Mentörlük yapmak, sadece ona değil, bana da yeni bakış açıları kazandırdı.”</p>
+        </div>
+
+        <div class="testimonial">
+            <h3>Esra Kaya</h3>
+            <p>“Mentörlük programı sayesinde harika bir bağ kurduk. Menti'min gelişimine katkıda bulunmak ve ona yol göstermek inanılmaz bir deneyim. Bu platformun bir parçası olmak bana da kendimi geliştirme fırsatı sundu.”</p>
+        </div>
+
+        <div class="testimonial">
+            <h3>Ayşe Demir</h3>
+            <p>“Mentörlük yapmak hem mentime yardımcı oldu hem de kendi gelişimim açısından bana çok şey kattı. Mentorluk süreci boyunca hem öğretirken hem de öğrenmek, karşılıklı bir gelişim süreci oldu.”</p>
+        </div>
+    </section>
+
+    <!-- Menti Yorumları -->
+    <section id="menti-yorum" class="section">
+        <h2>Mentilerimiz Neler Düşünüyor?</h2>
+
+        <div class="testimonial">
+            <h3>Zeynep Şahin</h3>
+            <p>“TechKadın Akademi’de menti olmak kariyerimde büyük bir fark yarattı. Mentörümle gerçekleştirdiğimiz her görüşme bana ilham verdi ve kariyerimde adım atmamı sağladı.”</p>
+        </div>
+
+        <div class="testimonial">
+            <h3>Derya Özkan</h3>
+            <p>“Mentörüm, bana sadece rehberlik etmekle kalmadı, kariyerime yön verme konusunda önemli tavsiyelerde bulundu. Bu deneyim sayesinde profesyonel anlamda büyük adımlar attım.”</p>
+        </div>
+
+        <div class="testimonial">
+            <h3>Fatma Çelik</h3>
+            <p>“Mentörümün desteği, kariyerimdeki belirsizlikleri ortadan kaldırdı. Mentörlük süreci boyunca kazandığım bilgiler ve tecrübelerle kendime olan güvenim arttı.”</p>
+        </div>
+
+        <div class="testimonial">
+            <h3>Nazlı Yıldırım</h3>
+            <p>“TechKadın Akademi mentörlük programı, bana kendimi geliştirme fırsatı sundu. Mentörümle birlikte çalışmak, kariyerimde daha güçlü adımlar atmamı sağladı.”</p>
+        </div>
+    </section>
+
+    <!-- Menti ve Mentörlük Başvuru Formu -->
+    <section id="basvuru-form" class="form-section">
+        <h2>Başvuru Formları</h2>
+
+        <div class="form-card">
+            <h3>Menti Başvuru Formu</h3>
+            <form>
+                <label for="menti-name">Adınız Soyadınız:</label>
+                <input type="text" id="menti-name" name="menti-name" required>
+
+                <label for="menti-email">E-posta:</label>
+                <input type="email" id="menti-email" name="menti-email" required>
+
+                <label for="menti-goals">Kariyer Hedefleriniz:</label>
+                <textarea id="menti-goals" name="menti-goals" rows="4" required></textarea>
+
+                <input type="submit" value="Başvur">
+            </form>
+        </div>
+
+        <div class="form-card">
+            <h3>Mentör Başvuru Formu</h3>
+            <form>
+                <label for="mentor-name">Adınız Soyadınız:</label>
+                <input type="text" id="mentor-name" name="mentor-name" required>
+
+                <label for="mentor-email">E-posta:</label>
+                <input type="email" id="mentor-email" name="mentor-email" required>
+
+                <label for="mentor-experience">Mentörlük Yapmak İstediğiniz Alanlar:</label>
+                <textarea id="mentor-experience" name="mentor-experience" rows="4" required></textarea>
+
+                <input type="submit" value="Başvur">
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 TechKadın Akademi. Tüm hakları saklıdır.</p>
+</footer>
+
+</body>
+</html>

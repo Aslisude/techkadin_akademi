@@ -1,0 +1,278 @@
+/* Genel Stil Ayarları */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url('background_pattern.png'); /* Hafif desenli arka plan */
+    background-size: cover;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #4a148c;
+    height: 70px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: transform 0.3s;
+}
+
+.navbar a:hover {
+    transform: translateY(-3px); /* Hover efekti */
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #6a1b9a;
+    color: white;
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+/* Amaç, Kurucumuz, Hedefimiz Bölümü */
+.section-cards {
+    display: flex; /* Flexbox kullanarak yan yana dizme */
+    justify-content: space-between; /* Alanı eşit dağıt */
+    padding: 40px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%; /* Sabit genişlik */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Geçiş efekti */
+    min-height: 200px; /* Kartların minimum yüksekliği */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Hoverda büyüme efekti */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Hoverda gölge artırma */
+}
+
+/* Farklı arka plan renkleri için */
+#amacimiz {
+    background-color: #E0C8E0; /* Renkli arka plan */
+}
+
+#kurucumuz {
+    background-color: #D1B6E1; /* Renkli arka plan */
+}
+
+#hedef-kitlemiz {
+    background-color: #E7D3E7; /* Renkli arka plan */
+}
+
+/* Önemli STEM Kadınları Bölümü */
+.important-women {
+    padding: 40px;
+    text-align: center;
+    display: flex;
+}
+
+.important-women h2 {
+    display: flex;
+    font-size: 2.5rem;
+    color: #6a1b9a;
+    margin-bottom: 30px;
+}
+
+/* Hikaye Kartları */
+.story-card-container {
+    display: flex; /* Flexbox kullanarak yan yana dizme */
+    justify-content: center; /* Ortala */
+    flex-wrap: wrap; /* Taşma durumunda alt satıra geçme */
+}
+
+.story-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Sabit genişlik */
+    margin: 20px; /* Kenar boşluğu */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.story-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.story-card h3 {
+    color: #6a1b9a;
+    font-size: 1.5rem;
+}
+
+/* Form Bölümü */
+.application-section {
+    text-align: center;
+    padding: 40px;
+}
+
+.form-card {
+    background: #F5F5F5;
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto; /* Ortala */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #4a148c;
+}
+body {
+    background-image: url('Adsız\ tasarım\ \(4\).jpg'); /* Görselin URL'si */
+    background-size: cover; /* Arka planı tamamen kaplaması için */
+    background-position: center; /* Görseli ortala */
+    background-repeat: no-repeat; /* Görselin tekrarlanmaması için */
+}
+header h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), /* Beyaz ışıma */
+                 0 0 10px rgba(255, 0, 150, 0.7), /* Pembe ışıma */
+                 0 0 15px rgba(255, 0, 150, 0.7), /* Pembe ışıma */
+                 0 0 20px rgba(255, 0, 150, 0.5), /* Pembe ışıma */
+                 0 0 25px rgba(255, 0, 150, 0.5); /* Pembe ışıma */
+    animation: glowing 1.5s infinite alternate; /* Parlama animasyonu */
+}
+
+/* Parlama Animasyonu */
+@keyframes glowing {
+    0% {
+        text-shadow: 0 0 5px rgba(255, 0, 150, 0.7),
+                     0 0 10px rgba(255, 0, 150, 0.5);
+    }
+    100% {
+        text-shadow: 0 0 20px rgba(255, 0, 150, 1),
+                     0 0 30px rgba(255, 0, 150, 0.9);
+    }
+}
+.social-media {
+    display: flex; /* Yatay olarak hizalama */
+    justify-content: center; /* Ortalamak için */
+    margin-top: 10px; /* Üstten boşluk */
+}
+
+.social-icon {
+    width: 30px; /* İkon genişliği */
+    height: 30px; /* İkon yüksekliği */
+    margin: 0 10px; /* İkonlar arasındaki boşluk */
+    transition: transform 0.2s; /* Hoverda animasyon */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Hoverda büyüme efekti */
+}
+.guncel-haberler {
+    padding: 40px;
+    text-align: center;
+    background-color: #f9f9f9; /* Daha açık bir arka plan rengi */
+}
+
+.guncel-haberler h2 {
+    font-size: 2.5rem;
+    color: #ff4081; /* Parlak pembe */
+    margin-bottom: 30px;
+    animation: fadeIn 1.5s ease-in-out; /* Animasyon ekleniyor */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Yukarıdan gelme efekti */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Normal konum */
+    }
+}
+
+.haber-card {
+    background-color: #ffffff; /* Beyaz arka plan */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Daha belirgin gölge */
+    width: 300px; /* Kart genişliği */
+    margin: 20px auto; /* Ortalamak için */
+    padding: 20px;
+    transition: transform 0.3s ease; /* Geçiş efekti */
+}
+
+.haber-card:hover {
+    transform: scale(1.05); /* Hoverda büyüme efekti */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Hoverda gölge artırma */
+}
+
+.haber-card h3 {
+    color: #6a1b9a; /* Kart başlık rengi */
+    margin-bottom: 10px;
+}
+
+.haber-card p {
+    color: #555; /* Açık gri metin rengi */
+}
+/* Mobil cihazlar için stil ayarları */
+@media (max-width: 768px) {
+    .section-cards {
+        flex-direction: column; /* Kartları dikey diz */
+        align-items: center; /* Kartları ortala */
+    }
+
+    .card {
+        width: 90%; /* Kart genişliğini %90 yap */
+        margin: 10px 0; /* Dikey boşluk */
+    }
+
+    header h1 {
+        font-size: 2rem; /* Başlık boyutunu küçült */
+    }
+
+    .guncel-haberler h2 {
+        font-size: 2rem; /* Güncel haberler başlık boyutunu küçült */
+    }
+}
+img {
+    max-width: 100%; /* Görselin maksimum genişliği %100 olacak */
+    height: auto; /* Yükseklik orantılı ayar */
+}
+
+

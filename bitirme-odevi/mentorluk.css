@@ -1,0 +1,152 @@
+/* Genel sayfa ayarları */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* 3D navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4a148c;
+    height: 70px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* 3D gölge efekti */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.navbar a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #6a1b9a;
+    color: white;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Main content */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+/* Section başlıkları */
+.section h2 {
+    color: #6a1b9a;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Paragraflar */
+.section p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+/* Testimonial kutuları */
+.testimonial {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Testimonial başlıkları */
+.testimonial h3 {
+    color: #6a1b9a;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Form section */
+.form-section {
+    margin-top: 4rem;
+}
+
+/* Form kartları */
+.form-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    display: block; /* Form kartlarının alt alta yer almasını sağlamak için */
+}
+
+/* Form başlıkları */
+.form-card h3 {
+    color: #6a1b9a;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Form etiketleri */
+.form-card form label {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Form alanları */
+.form-card form input,
+.form-card form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Gönder butonu */
+.form-card form input[type="submit"] {
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.form-card form input[type="submit"]:hover {
+    background-color: #4a148c;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #6a1b9a;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

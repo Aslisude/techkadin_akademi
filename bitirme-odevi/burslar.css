@@ -1,0 +1,143 @@
+/* Genel sayfa ayarları */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* 3D navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4a148c;
+    height: 70px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.navbar a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #6a1b9a;
+    color: white;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Burs kartları */
+.education-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    color: #6a1b9a;
+    margin: 1rem 0;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.card button {
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #4a148c;
+}
+
+/* Başarı Hikayeleri */
+.success-stories {
+    margin: 2rem;
+    text-align: center;
+}
+
+.success-stories h2 {
+    color: #6a1b9a;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Hikaye kartları */
+.story-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin: 1rem auto;
+    max-width: 600px; /* Kart genişliği ayarı */
+}
+
+.story-card h3 {
+    color: #6a1b9a;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.story-card p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #6a1b9a;
+    color: white;
+}
